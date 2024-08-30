@@ -60,7 +60,7 @@
 
     const Magic = document.getElementById ('Magic')
     const Magic_audio = new Audio ('audio/RocketSound.wav')
-    Love.onpointerdown = () => {
+    Magic.onpointerdown = () => {
         Magic_audio.play ()
         Magic.src = 'img/Magic2.png'
         setTimeout (() => Magic.src = 'img/Magic1.png', 500)
