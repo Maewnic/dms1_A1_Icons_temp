@@ -17,11 +17,11 @@
     <div class="row">
         <div class="image-container"><img id="Rocket" src="img/Rocket1.png" height="200" width="200"/></div>
         <div class="image-container"><img id="Love" src="img/Love1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="squ" src="img/squ.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Time" src="img/Time1.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/hex.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Magic" src="img/Magic1.png" height="200" width="200"/></div>
         <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
         <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
         </div>
@@ -50,4 +50,19 @@
         setTimeout (() => Love.src = 'img/Love1.png', 500)
     }
 
+    const Time = document.getElementById ('Time')
+    const Time_audio = new Audio ('audio/RocketSound.wav')
+    Time.onpointerdown = () => {
+        Time_audio.play ()
+        Time.src = 'img/Time2.png'
+        setTimeout (() => Time.src = 'img/Time1.png', 500)
+    }
+
+    const Magic = document.getElementById ('Magic')
+    const Magic_audio = new Audio ('audio/RocketSound.wav')
+    Love.onpointerdown = () => {
+        Magic_audio.play ()
+        Magic.src = 'img/Magic2.png'
+        setTimeout (() => Love.src = 'img/Magic1.png', 500)
+    }
 </script>
