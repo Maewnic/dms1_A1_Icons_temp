@@ -15,7 +15,7 @@
 </style>
 <body>
     <div class="row">
-        <div class="image-container"><img id="cir" src="img/Rocket1.png" onmouseover="this.src='img/Rocket2.png';" onmouseout="this.src='img/Rocket1.png';" height="200" width="200"/></div>
+        <div class="image-container"><img id="Rocket" src="img/Rocket1.png" height="200" width="200"/></div>
         <div class="image-container"><img id="tri" src="img/tri.png" height="200" width="200"/></div>
         <div class="image-container"><img id="squ" src="img/squ.png" height="200" width="200"/></div>
     </div>
@@ -34,7 +34,11 @@
 </body>
 
 <script>
-    const cir = document.getElementById ('cir')
-    const cir_audio = new Audio ('audio/Ring_ring.mp3')
-    cir.onpointerdown = () => cir_audio.play ()
+    const Rocket = document.getElementById ('Rocket')
+    const Rocket_audio = new Audio ('audio/Ring_ring.mp3')
+    Rocket.onpointerdown = () => {
+        Rocket_audio.play ()
+        Rocket.src = 'img/.png'
+        setTimeout (() => Rocket.src = 'img/Rocket1.png', 1000)
+}
 </script>
