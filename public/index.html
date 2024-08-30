@@ -35,10 +35,12 @@
 
 <script>
     const Rocket = document.getElementById ('Rocket')
-    const Rocket_audio = new Audio ('audio/Ring_ring.mp3')
+    const Rocket_audio = new Audio ('audio/RocketSound.mp3')
     Rocket.onpointerdown = () => {
         Rocket_audio.play ()
         Rocket.src = 'img/Rocket2.png'
         setTimeout (() => Rocket.src = 'img/Rocket1.png', 500)
-}
+    }
+
+
 </script>
