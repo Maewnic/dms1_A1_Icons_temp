@@ -17,19 +17,19 @@
     <div class="row">
         <div class="image-container"><img id="Rocket" src="img/Rocket1.png" height="200" width="200"/></div>
         <div class="image-container"><img id="Love" src="img/Love1.png" height="200" width="200"/></div>
-        <div class="image-container"><img id="Time" src="img/Time1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Action" src="img/Action1.png" height="200" width="200"/></div>
     </div>
 
     <div class="row">
+        <div class="image-container"><img id="Time" src="img/Time1.png" height="200" width="200"/></div>
         <div class="image-container"><img id="Magic" src="img/Magic1.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/rec.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sta.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Cup" src="img/Cup1.png" height="200" width="200"/></div>
         </div>
 
     <div class="row">
-        <div class="image-container"><img src="img/trr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/sqr.png" height="200" width="200"/></div>
-        <div class="image-container"><img src="img/her.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Glass" src="img/Glass1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Abstract" src="img/Abstract1.png" height="200" width="200"/></div>
+        <div class="image-container"><img id="Ghost" src="img/Ghost1.png" width="200"/></div>
     </div>
 </body>
 
@@ -49,6 +49,15 @@
         Love.src = 'img/Love2.png'
         setTimeout (() => Love.src = 'img/Love1.png', 1000)
     }
+    
+    const Action = document.getElementById ('Action')
+    const Action_audio = new Audio ('audio/Action.wav')
+    Action.onpointerdown = () => {
+        Action_audio.play ()
+        Action.src = 'img/Action2.png'
+        setTimeout (() => Time.src = 'img/Action1.png', 1000)
+
+    }
 
     const Time = document.getElementById ('Time')
     const Time_audio = new Audio ('audio/Time.wav')
@@ -64,5 +73,37 @@
         Magic_audio.play ()
         Magic.src = 'img/Magic2.png'
         setTimeout (() => Magic.src = 'img/Magic1.png', 1000)
+    }
+
+    const Cup = document.getElementById ('Cup')
+    const Cup_audio = new Audio ('audio/Cup.wav')
+    Cup.onpointerdown = () => {
+        Cup_audio.play ()
+        Cup.src = 'img/Cup2.png'
+        setTimeout (() => Cup.src = 'img/Cup1.png', 1000)
+    }
+
+    const Glass = document.getElementById ('Glass')
+    const Glass_audio = new Audio ('audio/Glass.wav')
+    Glass.onpointerdown = () => {
+        Glass_audio.play ()
+        Glass.src = 'img/Glass2.png'
+        setTimeout (() => Glass.src = 'img/Glass1.png', 1000)
+    }
+
+    const Abstract = document.getElementById ('Abstract')
+    const Abstract_audio = new Audio ('audio/Abstract.wav')
+    Abstract.onpointerdown = () => {
+        Abstract_audio.play ()
+        Abstract.src = 'img/Abstract2.png'
+        setTimeout (() => Abstract.src = 'img/Abstract1.png', 1000)
+    }
+
+    const Ghost = document.getElementById ('Ghost')
+    const Ghost_audio = new Audio ('audio/Ghost.wav')
+    Ghost.onpointerdown = () => {
+        Ghost_audio.play ()
+        Ghost.src = 'img/Ghost2.png'
+        setTimeout (() => Ghost.src = 'img/Ghost1.png', 1000)
     }
 </script>
